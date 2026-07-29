@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf5ec;
+  --color-panel: #ffffff;
+  --color-panel2: #f8f5ef;
+  --color-ink: #4a4a45;
+  --color-ink-strong: #3f3f3a;
+  --color-ink-soft: #76716a;
+  --color-ink-muted: #9a968c;
+  --color-line: #ece6da;
+  --color-line-btn: #e7e1d5;
+  --color-accent: #4a86c4;
+}
+
+@page {
+  size: A4 landscape;
+  margin: 10mm;
+}
+
+body {
+  font-family:
+    "M PLUS Rounded 1c", "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo",
+    sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-size: 14px;
+}
+#root {
+  width: min(98.8vw, 1540px);
+  max-width: 1540px;
+  margin: 0 auto;
+  padding: 24px 12px 28px;
+}
